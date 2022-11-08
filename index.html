@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pagina de Perfil</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!--menu nav-->
+    <div class="nav">
+        <div class="nav-interior">
+            <h1 class="nav-title">Perfil</h1>
+            <ul class="nav-links">
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#" class="active">Mi Perfil</a></li>
+                <li><a href="#">Buscar Amigos</a></li>
+            </ul>
+        </div>
+        <button class="btn">Cerrar sesión</button>
+    </div>
+    <br>
+    <br>
+
+
+    <!--bloques-->
+    <div class="pag_perfil">   <!--contiene los 4 bloques-->
+        
+        <!--tarj usuario y educacion-->
+        <div class="columna_uno"> 
+            
+            <!--tarjeta usuario-->
+            <div class="tarjeta">
+                <div class="encabezado">
+                    <img src="images/alayne-s.jpg" alt="img usuario" class="img_usuario">   
+                </div>
+                <div class="cuerpo">
+                    <h1 id="name">Juana De Arco</h1>
+                    <h3>
+                        <img src="icons/map-marker.png" alt="Mapa" class="icono">Paris
+                    </h3>
+                    <p>
+                        Developer | Engineer | Problem Solver
+                        <br>
+                        Master of shadows and the Internet
+                    </p>
+                    <p>
+                        <a href="#" onclick="cambiarNombre(this)">
+                            <img src="icons/gear.png" alt="engrane" class="icono">editar perfil
+                        </a>
+                    </p>    
+                </div>
+            </div>
+
+            <!--educacion-->
+            <div class="educacion">
+                <div class="titulo_ed">
+                    <h3>Educación</h3>
+                </div>
+                <div class="info">
+                    <p>
+                        Coding Dojo - Full Stack Bootcamp
+                        <br>
+                        Agosto - Octubre 2022
+                        <br>
+                        <br>
+                        <strong> Triple cinturon negro en Python, Mern y C#...</strong>
+                    </p>
+                </div>
+            </div>
+        </div>
+
+
+
+        <div class="columna_dos"> <!--solicitudes y amigos-->
+            
+            <!--solicitudes-->
+            <div class="solicitudes">
+                <div class="titulo">
+                    <p><button class="sol">2</button>  Solicitudes de Amistad</p>
+                </div>
+                
+                <div class="body">
+                    <div class="solicitantes">
+                        <p>
+                            <img src="images/jane-m.jpg" alt="Foto perfil" class="img_user"> Jane M
+                        </p>
+                        <p>
+                        <img src="icons/accept-circle.png" alt="Icono Aceptar" class="img_icons" onclick="acepta(this)">
+                        <img src="icons/close-circle.png" alt="Icono Rechazar" class="img_icons" onclick="elimina(this)">
+                        </p>
+                    </div>
+                    <br>
+                    <div class="solicitantes">
+                        <p>
+                        <img src="images/adrien-s.jpg" alt="Foto perfil" class="img_user"> Adrien S
+                        </p>
+                        <p>
+                        <img src="icons/accept-circle.png" alt="Icono Aceptar" class="img_icons" onclick="acepta(this)">
+                        <img src="icons/close-circle.png" alt="Icono Rechazar" class="img_icons" onclick="elimina(this)">
+                        </p>
+                    </div>    
+                </div>  
+            </div>
+
+
+            <!--amigos-->
+                <div class="amigos">
+                    <div class="titulo">
+                        <p><button class="amis">500+</button>  Amigos</p>
+                    </div>
+                    
+                    <div class="body_ami">            
+                        <div class="agregados">
+                        <p><img src="images/anne-s.jpg" alt="Foto perfil" class="img_user"> Anne D</p>
+                        <p><img src="images/arry-s.jpg" alt="Foto perfil" class="img_user"> Arry T</p>
+                        <p><img src="images/phil-s.jpg" alt="Foto perfil" class="img_user"> Phil N</p>
+                        <p><img src="images/todd-s.jpg" alt="Foto perfil" class="img_user"> Todd P</p>
+                    </div> 
+                    <div class="pie"> <!--enlace-->
+                        <p>
+                            <a href="#">Ver mas</a>
+                        </p>
+                    </div>
+                </div>    
+            </div>                      
+        </div>    
+    </div>    
+    <br>
+    <br>
+    <br>
+    <script src="js/script.js"></script>
+</body>
+</html>
